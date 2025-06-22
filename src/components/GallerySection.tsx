@@ -1,6 +1,5 @@
 //TODO: to make this component
-
-export default function MapSect() {
+export default function GallerySect() {
     return(
         <section className="">
 
