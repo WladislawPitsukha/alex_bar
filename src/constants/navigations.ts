@@ -1,4 +1,4 @@
-import { AccordionProps } from "@/app/types/accordionProps";
+import { AccordionProps } from "@/types/accordionProps";
 
 export const navigationsParams: AccordionProps[] = [
     {
@@ -12,18 +12,18 @@ export const navigationsParams: AccordionProps[] = [
             },
             {
                 id: 2,
-                name: "Cafe 1",
-                link: "/cafe_1",
+                name: "Menu",
+                link: "/menu",
             },
             {
                 id: 3,
-                name: "Cafe 2",
-                link: "/cafe_2",
+                name: "Cafe Krakow",
+                link: "/cafe_1s",
             },
             {
                 id: 4,
-                name: "Cafe 3",
-                link: "/cafe_3",
+                name: "Cafe Gdansk",
+                link: "/cafe_2",
             },
         ]
     },
