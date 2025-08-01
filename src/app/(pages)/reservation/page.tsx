@@ -1,0 +1,1 @@
+//TODO: make the page with full-component's structure of reservation page
