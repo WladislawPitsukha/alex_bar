@@ -1,0 +1,1 @@
+//TODO: add layout full-component's details of menu's page
