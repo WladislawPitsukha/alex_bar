@@ -1,1 +1,0 @@
-//TODO: to make form to register

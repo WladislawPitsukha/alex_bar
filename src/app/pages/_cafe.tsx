@@ -1,1 +1,0 @@
-//TODO: make page for 3 cafes with different props
