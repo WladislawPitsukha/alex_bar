@@ -1,6 +1,6 @@
 "use client"
 
-import { AccordionProps } from "@/app/types/accordionProps";
+import { AccordionProps } from "@/types/accordionProps";
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from "@mui/material";
 import Link from "next/link";
 
