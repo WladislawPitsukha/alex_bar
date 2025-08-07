@@ -1,3 +1,6 @@
+import { photosOfCafe } from "@/constants/photos";
+import { photosOfMenu } from "@/constants/photosMenu";
+import Image from "next/image";
 import Link from "next/link";
 
 export type MenuLinksProps = {
@@ -38,17 +41,35 @@ export function MenuBlockLink({id, text, link}:
 
 //TODO: to make this component
 export default function HeroSect() {
+    const photosHero = photosOfCafe.concat(photosOfMenu).filter((photo) => photo.id <= 16);
+
     return(
-        <section className="flex justify-between items-start h-auto w-full">
+        <section className="flex justify-between items-start h-auto w-full px-[100px] py-[50px]">
             <article className="w-[1250px] h-[800px] border border-white">
-                //TODO: add scroll & gallery's photos of menu, cafe, tradition
+                <div className="grid grid-cols-4 gap-4 p-4 overflow-y-auto h-auto">
+                    {photosOfCafe.map((photo) => (
+                        <div 
+                            key={photo.id} 
+                            className="relative h-[200px] w-full border border-gray-400 rounded-lg overflow-hidden hover:border-white transition-colors duration-200"
+                        >
+                            <Image
+                                src={photo.photo}
+                                alt={`Gallery photo ${photo.id}`}
+                                fill
+                                className="object-cover"
+                            />
+                        </div>
+                    ))}
+                </div>
             </article>
             <article className="flex flex-col items-end justify-between h-[800px] w-full">
                 <h2 className="text-4xl font-bold tracking-wider text-white mb-10">
                     A taste of Norway in Poland - for all ages.
                 </h2>
-                <div className="">
-                    //TODO: add some interesting & animation component
+                <div className="bg-gradient-to-r rounded-full animate-pulse">
+                    <div className="flex items-center justify-center text-white text-2xl font-bold">
+                        Welcome to Alex's Bar
+                    </div>
                 </div>
                 <div className="flex flex-col border-white border-1 rounded-3xl p-3 gap-1 w-[200px]">
                     {menuLinks.map((link) => (
