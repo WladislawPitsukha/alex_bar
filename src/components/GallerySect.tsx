@@ -1,9 +1,10 @@
 "use client"
 
+import { photosOfCafe } from '@/constants/photosCafe';
+import { PhotosProps } from '@/types/photosProps';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-import { photosOfCafe, PhotosProps } from "@/constants/photos"
 import Image from "next/image"
 
 import { useState } from "react"
