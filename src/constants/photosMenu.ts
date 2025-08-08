@@ -1,28 +1,22 @@
 import MenuPhoto1 from '@/assets/imgs/photos/MenuBar1.jpg'
-import MenuPhoto2 from '@/assets/imgs/menu/MenuBar2.jpg';
-import MenuPhoto3 from '@/assets/imgs/menu/MenuBar3.jpg';
-import MenuPhoto4 from '@/assets/imgs/menu/MenuBar4.jpg';
-import MenuPhoto5 from '@/assets/imgs/menu/MenuBar5.jpg';
-import MenuPhoto6 from '@/assets/imgs/menu/MenuBar6.jpg';
-import MenuPhoto7 from '@/assets/imgs/menu/MenuBar7.jpg';
-import MenuPhoto8 from '@/assets/imgs/menu/MenuBar8.jpg';
-import MenuPhoto9 from '@/assets/imgs/menu/MenuBar9.jpg';
-import MenuPhoto10 from '@/assets/imgs/menu/MenuBar10.jpg';
-import MenuPhoto11 from '@/assets/imgs/menu/MenuBar11.jpg';
-import MenuPhoto12 from '@/assets/imgs/menu/MenuBar12.jpg';
-import MenuPhoto13 from '@/assets/imgs/menu/MenuBar13.jpg';
-import MenuPhoto14 from '@/assets/imgs/menu/MenuBar14.jpg';
-import MenuPhoto15 from '@/assets/imgs/menu/MenuBar15.jpg';
-import MenuPhoto16 from '@/assets/imgs/menu/MenuBar16.jpg';
+import MenuPhoto2 from '@/assets/imgs/photos/MenuBar2.jpg';
+import MenuPhoto3 from '@/assets/imgs/photos/MenuBar3.jpg';
+import MenuPhoto4 from '@/assets/imgs/photos/MenuBar4.jpg';
+import MenuPhoto5 from '@/assets/imgs/photos/MenuBar5.jpg';
+import MenuPhoto6 from '@/assets/imgs/photos/MenuBar6.jpg';
+import MenuPhoto7 from '@/assets/imgs/photos/MenuBar7.jpg';
+import MenuPhoto8 from '@/assets/imgs/photos/MenuBar8.jpg';
+import MenuPhoto9 from '@/assets/imgs/photos/MenuBar9.jpg';
+import MenuPhoto10 from '@/assets/imgs/photos/MenuBar10.jpg';
+import MenuPhoto11 from '@/assets/imgs/photos/MenuBar11.jpg';
+import MenuPhoto12 from '@/assets/imgs/photos/MenuBar12.jpg';
+import MenuPhoto13 from '@/assets/imgs/photos/MenuBar13.jpg';
+import MenuPhoto14 from '@/assets/imgs/photos/MenuBar14.jpg';
+import MenuPhoto15 from '@/assets/imgs/photos/MenuBar15.jpg';
+import MenuPhoto16 from '@/assets/imgs/photos/MenuBar16.jpg';
+import { PhotosProps } from '@/types/photosProps';
 
-export type MenuPhotosProps = {
-    id: number;
-    photo: any;
-    title?: string;
-    description?: string;
-}
-
-export const photosOfMenu: MenuPhotosProps[] = [
+export const photosOfMenu: PhotosProps[] = [
     {
         id: 1,
         photo: MenuPhoto1,

@@ -1,5 +1,6 @@
-import { photosOfCafe } from "@/constants/photos";
+import { photosOfCafe } from "@/constants/photosCafe";
 import { photosOfMenu } from "@/constants/photosMenu";
+import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -47,7 +48,20 @@ export default function HeroSect() {
         <section className="flex justify-between items-start h-auto w-full px-[100px] py-[50px]">
             <article className="w-[1250px] h-[800px] border border-white">
                 <div className="grid grid-cols-4 gap-4 p-4 overflow-y-auto h-auto">
-                    {photosOfCafe.map((photo) => (
+                    <ImageList variant="masonry" cols={3} gap={8}>
+                        {photosHero.map((item) => (
+                            <ImageListItem key={item.id}>
+                            <img
+                                srcSet={`${item.photo}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                src={`${item.photo}?w=248&fit=crop&auto=format`}
+                                alt={item.description}
+                                loading="lazy"
+                            />
+                            <ImageListItemBar position="below" title={item.title} />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                    {photosHero.map((photo) => (
                         <div 
                             key={photo.id} 
                             className="relative h-[200px] w-full border border-gray-400 rounded-lg overflow-hidden hover:border-white transition-colors duration-200"
