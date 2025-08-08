@@ -7,7 +7,7 @@ import { navigationsParams } from '@/constants/navigations';
 
 export default function NavBar() {
     return(
-        <nav className="flex items-center justify-evenly stucky top-0 right-0 w-full h-[60px] border border-black bg-white">
+        <nav className="fixed top-0 right-0 z-50 flex items-center justify-evenly w-full h-[60px] border border-black bg-white">
             <div className="flex justify-center items-center gap-1">
                 <h1 className="text-2xl font-bold tracking-wider hover:text-gray-700 transition-colors duration-300 text-black uppercase">
                     Alex's bar

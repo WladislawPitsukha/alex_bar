@@ -1,14 +1,11 @@
 import { photosOfCafe } from "@/constants/photosCafe";
 import { photosOfMenu } from "@/constants/photosMenu";
-import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
-import Image from "next/image";
-import Link from "next/link";
+import { MenuLinksProps } from "@/types/menuLinks";
 
-export type MenuLinksProps = {
-    id: number;
-    text: string;
-    link: string;
-}
+import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
+
+import Image from "next/image";
+import { MenuBlockLink } from "./MenuBlockLinks";
 
 export const menuLinks: MenuLinksProps[] = [
     {
@@ -23,58 +20,37 @@ export const menuLinks: MenuLinksProps[] = [
     }
 ]
 
-export function MenuBlockLink({id, text, link}: 
-    MenuLinksProps
-) {
-    return(
-        <div 
-            className="flex items-center justify-center p-2 border-2 hover:bg-black rounded-md transition-colors duration-200" 
-            key={id}
-        >
-            <Link href={link}>
-                <h4 className="text-lg font-medium text-white">
-                    {text}
-                </h4>
-            </Link>
-        </div>
-    )
-}
-
 //TODO: to make this component
 export default function HeroSect() {
     const photosHero = photosOfCafe.concat(photosOfMenu).filter((photo) => photo.id <= 16);
 
     return(
-        <section className="flex justify-between items-start h-auto w-full px-[100px] py-[50px]">
+        <section className="mt-[50px] border-white border-b-4 flex justify-between items-start h-auto w-full px-[100px] py-[50px]">
             <article className="w-[1250px] h-[800px] border border-white">
-                <div className="grid grid-cols-4 gap-4 p-4 overflow-y-auto h-auto">
-                    <ImageList variant="masonry" cols={3} gap={8}>
-                        {photosHero.map((item) => (
-                            <ImageListItem key={item.id}>
-                            <img
-                                srcSet={`${item.photo}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                src={`${item.photo}?w=248&fit=crop&auto=format`}
-                                alt={item.description}
-                                loading="lazy"
-                            />
-                            <ImageListItemBar position="below" title={item.title} />
-                            </ImageListItem>
-                        ))}
-                    </ImageList>
-                    {photosHero.map((photo) => (
-                        <div 
-                            key={photo.id} 
-                            className="relative h-[200px] w-full border border-gray-400 rounded-lg overflow-hidden hover:border-white transition-colors duration-200"
-                        >
+                <ImageList 
+                    variant="masonry" 
+                    cols={3} 
+                    gap={8}
+                    className="!overflow-y-auto h-[800px] p-4"
+                >
+                    {photosHero.map((item) => (
+                        <ImageListItem key={item.id}>
                             <Image
-                                src={photo.photo}
-                                alt={`Gallery photo ${photo.id}`}
-                                fill
-                                className="object-cover"
+                                src={item.photo}
+                                alt={item.description}
+                                width={400}
+                                height={300}
+                                className="w-full h-auto object-cover"
+                                priority={item.id <= 4}
                             />
-                        </div>
+                            <ImageListItemBar 
+                                position="below" 
+                                title={item.title}
+                                className="text-white" 
+                            />
+                        </ImageListItem>
                     ))}
-                </div>
+                </ImageList>
             </article>
             <article className="flex flex-col items-end justify-between h-[800px] w-full">
                 <h2 className="text-4xl font-bold tracking-wider text-white mb-10">
@@ -87,7 +63,7 @@ export default function HeroSect() {
                 </div>
                 <div className="flex flex-col border-white border-1 rounded-3xl p-3 gap-1 w-[200px]">
                     {menuLinks.map((link) => (
-                        <MenuBlockLink 
+                        <MenuBlockLink
                             {...link}
                         />
                     ))}
