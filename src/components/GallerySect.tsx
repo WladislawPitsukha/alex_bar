@@ -1,3 +1,5 @@
+//TODO: make undependies component sect with h1 & div with the same CSS for Section's Components
+
 "use client"
 
 import { photosOfCafe } from '@/constants/photosCafe';

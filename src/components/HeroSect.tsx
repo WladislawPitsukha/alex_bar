@@ -56,8 +56,8 @@ export default function HeroSect() {
                 <h2 className="text-4xl font-bold tracking-wider text-white mb-10">
                     A taste of Norway in Poland - for all ages.
                 </h2>
-                <div className="bg-gradient-to-r rounded-full animate-pulse">
-                    <div className="flex items-center justify-center text-white text-2xl font-bold">
+                <div className="bg-gradient-to-r from-gray-800 to-gray-600 rounded-full animate-pulse px-4 py-2">
+                    <div className="flex items-center justify-center text-white text-xl font-bold">
                         Welcome to Alex's Bar
                     </div>
                 </div>

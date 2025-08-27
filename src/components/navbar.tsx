@@ -1,5 +1,3 @@
-//TODO: to make this component
-
 import NorvaysFlag from '@/assets/imgs/norwaysflag.jpg';
 import Image from 'next/image';
 import AccordionUsage from './AccordionUsage';
