@@ -49,7 +49,7 @@ export default function GallerySect() {
     }
 
     return(
-        <section className="flex flex-col items-center justify-evenly h-screen w-full">
+        <section className="flex flex-col items-center justify-evenly h-screen w-full border-b-4 border-white py-[50px]">
             <h1 className='text-4xl font-bold tracking-wide mb-10 text-white uppercase'>
                 Gallery of Bar's day
             </h1>

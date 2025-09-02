@@ -8,6 +8,6 @@ export type EventProps = {
 
 export type ImageEventProps = {
     id: number;
-    src: string;
+    src: any;
     alt: string;
 }

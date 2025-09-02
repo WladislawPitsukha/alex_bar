@@ -20,7 +20,6 @@ export const menuLinks: MenuLinksProps[] = [
     }
 ]
 
-//TODO: to make this component
 export default function HeroSect() {
     const photosHero = photosOfCafe.concat(photosOfMenu).filter((photo) => photo.id <= 16);
 
@@ -33,9 +32,10 @@ export default function HeroSect() {
                     gap={8}
                     className="!overflow-y-auto h-[800px] p-4"
                 >
-                    {photosHero.map((item) => (
-                        <ImageListItem key={item.id}>
+                    {photosHero.map((item, index) => (
+                        <ImageListItem key={index}>
                             <Image
+                                key={item.id}
                                 src={item.photo}
                                 alt={item.description}
                                 width={400}
@@ -62,8 +62,9 @@ export default function HeroSect() {
                     </div>
                 </div>
                 <div className="flex flex-col border-white border-1 rounded-3xl p-3 gap-1 w-[200px]">
-                    {menuLinks.map((link) => (
+                    {menuLinks.map((link, index) => (
                         <MenuBlockLink
+                            key={index}
                             {...link}
                         />
                     ))}

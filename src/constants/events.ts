@@ -19,17 +19,17 @@ export const events: EventProps[] = [
         images: [
             {
                 id: 1,
-                src: `${NorvegianFoodFest1}`,
+                src: NorvegianFoodFest1,
                 alt: "Traditional Norwegian dishes display"
             },
             {
                 id: 2,
-                src: `${NorvegianFoodFest2}`,
+                src: NorvegianFoodFest2,
                 alt: "Chef preparing Norwegian specialties"
             },
             {
                 id: 3,
-                src: `${NorvegianFoodFest3}`,
+                src: NorvegianFoodFest3,
                 alt: "Festival atmosphere with dining guests"
             }
         ]
@@ -42,17 +42,17 @@ export const events: EventProps[] = [
         images: [
             {
                 id: 1,
-                src: `${VikingNight1}`,
+                src: VikingNight1,
                 alt: "Viking themed decorations"
             },
             {
                 id: 2,
-                src: `${VikingNight2}`,
+                src: VikingNight2,
                 alt: "Traditional Viking feast setup"
             },
             {
                 id: 3,
-                src: `${VikingNight3}`,
+                src: VikingNight3,
                 alt: "Viking entertainment performance"
             }
         ]
@@ -65,17 +65,17 @@ export const events: EventProps[] = [
         images: [
             {
                 id: 1,
-                src: `${Midsummer1}`,
+                src: Midsummer1,
                 alt: "Midsummer decoration and setup"
             },
             {
                 id: 2,
-                src: `${Midsummer2}`,
+                src: Midsummer2,
                 alt: "Special midsummer cocktails"
             },
             {
                 id: 3,
-                src: `${Midsummer3}`,
+                src: Midsummer3,
                 alt: "Live music performance"
             }
         ]
