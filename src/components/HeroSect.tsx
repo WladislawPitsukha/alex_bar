@@ -1,24 +1,11 @@
 import { photosOfCafe } from "@/constants/photosCafe";
 import { photosOfMenu } from "@/constants/photosMenu";
-import { MenuLinksProps } from "@/types/menuLinks";
 
 import { ImageList, ImageListItem, ImageListItemBar } from "@mui/material";
 
 import Image from "next/image";
 import { MenuBlockLink } from "./MenuBlockLinks";
-
-export const menuLinks: MenuLinksProps[] = [
-    {
-        id: 1,
-        text: 'Reservation',
-        link: '/reservation',
-    },
-    {
-        id: 2,
-        text: 'Menu',
-        link: '/menu'
-    }
-]
+import { menuLinks } from "@/constants/menuLinks";
 
 export default function HeroSect() {
     const photosHero = photosOfCafe.concat(photosOfMenu).filter((photo) => photo.id <= 16);
