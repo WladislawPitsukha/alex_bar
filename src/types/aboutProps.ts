@@ -5,23 +5,24 @@ export type CafeInfoProps = {
     id: number;
     title: string;
     info: {
-        descr: string;
+        description: string;
         moreDesc: string;
         coolFacts: string;
     };
+    city: string;
     address: string;
-    networks: {
-        email: string;
+    connection: {
         phone: string;
-        socials: {
-            id: number;
-            labelText: string;
-            href: string;
-        }[];
-    };
+        email: string;
+    }
+    socials?: {
+        id: number;
+        labelText: string;
+        href: string;
+    }[];
     time: {
         days: string;
         hours: string;
     };
-    comments: ClientProps[];
+    comments?: ClientProps[];
 }
