@@ -8,6 +8,7 @@ export type CafeInfoProps = {
         description: string;
         moreDesc: string;
         coolFacts: string;
+        stars: number;
     };
     city: string;
     address: string;

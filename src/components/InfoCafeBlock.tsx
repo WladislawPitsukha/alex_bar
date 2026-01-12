@@ -1,7 +1,6 @@
 "use client";
 
 import { CafeInfoProps } from "@/types/aboutProps";
-import { Description } from "@mui/icons-material";
 import ClientCard from "./ClientCard";
 import { clients } from "@/constants/clients";
 import { useEffect, useState } from "react";
@@ -11,7 +10,7 @@ export default function InfoCafeBlock({
 }: CafeInfoProps) {
     const {days, hours} = time;
     const {phone, email} = connection;
-    const {description, moreDesc, coolFacts} = info;
+    const {description, moreDesc, coolFacts, stars} = info;
 
     const [curCard, setCurCard] = useState(0);
 
@@ -42,7 +41,7 @@ export default function InfoCafeBlock({
                     {address}
                 </h4>
                 <h4 className="font-semibold text-gray-700 flex items-center gap-1">
-                    4.8 <span role="img" aria-label="star">⭐</span>
+                    {stars} <span role="img" aria-label="star">⭐</span>
                 </h4>
                 <h4 className="text-gray-700">
                     <span className="font-bold text-black">Time:</span> {hours}
