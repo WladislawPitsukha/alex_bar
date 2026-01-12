@@ -1,5 +1,6 @@
 import { CafeInfoProps } from "@/types/aboutProps";
 import { clients } from "./clients";
+import { getAvarageRating } from "@/utils/rating";
 
 export const cafes: CafeInfoProps[] = [
     {
@@ -9,6 +10,12 @@ export const cafes: CafeInfoProps[] = [
             description: "The flagship Alex Bar in the heart of Warsaw, known for its vibrant atmosphere and signature cocktails.",
             moreDesc: "Spacious, modern, and always buzzing. Perfect for both casual meetups and special occasions.",
             coolFacts: "Where Warsaw meets for a good time!",
+            stars: getAvarageRating(
+                clients.filter(client =>
+                    client.desc.en.includes("Warsaw")
+                ),
+                "Warsaw"
+            ),
         },
         city: "Warsaw",
         address: "Nowy Świat 10, Warsaw",
@@ -46,6 +53,12 @@ export const cafes: CafeInfoProps[] = [
             description: "A cozy spot near the old town, offering local brews and sea-inspired snacks.",
             moreDesc: "Enjoy the maritime vibe and friendly service just steps from the Motława river.",
             coolFacts: "Taste the Baltic breeze!",
+            stars: getAvarageRating(
+                clients.filter(client =>
+                    client.desc.en.includes("Gdansk")
+                ),
+                "Gdansk"
+            ),
         },
         city: "Gdansk",
         address: "Długa 50, Gdansk", 
@@ -82,6 +95,12 @@ export const cafes: CafeInfoProps[] = [
             description: "Historic charm meets modern taste in the heart of Krakow’s main square.",
             moreDesc: "Sip coffee or cocktails with a view of St. Mary's Basilica. Live music on weekends.",
             coolFacts: "Old town, new flavors!",
+            stars: getAvarageRating(
+                clients.filter(client =>
+                    client.desc.en.includes("Krakow")
+                ),
+                "Krakow"
+            ),
         },
         city: "Krakow",
         address: "Rynek Główny 20, Krakow",
