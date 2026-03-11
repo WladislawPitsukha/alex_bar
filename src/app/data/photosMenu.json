@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "photo": "/assets/imgs/photos/MenuBar1.jpg",
+        "title": "Breakfast Menu",
+        "description": "Our signature breakfast dishes"
+    },
+    {
+        "id": 2,
+        "photo": "/assets/imgs/photos/MenuBar2.jpg",
+        "title": "Lunch Specials",
+        "description": "Daily lunch offerings"
+    },
+    {
+        "id": 3,
+        "photo": "/assets/imgs/photos/MenuBar3.jpg",
+        "title": "Dinner Selection",
+        "description": "Evening dining options"
+    },
+    {
+        "id": 4,
+        "photo": "/assets/imgs/photos/MenuBar4.jpg",
+        "title": "Desserts",
+        "description": "Sweet treats and pastries"
+    },
+    {
+        "id": 5,
+        "photo": "/assets/imgs/photos/MenuBar5.jpg",
+        "title": "Beverages",
+        "description": "Hot and cold drinks"
+    },
+    {
+        "id": 6,
+        "photo": "/assets/imgs/photos/MenuBar6.jpg",
+        "title": "Weekend Specials",
+        "description": "Weekend exclusive dishes"
+    },
+    {
+        "id": 7,
+        "photo": "/assets/imgs/photos/MenuBar7.jpg",
+        "title": "Appetizers",
+        "description": "Starters and small plates"
+    },
+    {
+        "id": 8,
+        "photo": "/assets/imgs/photos/MenuBar8.jpg",
+        "title": "Main Courses",
+        "description": "Signature main dishes"
+    },
+    {
+        "id": 9,
+        "photo": "/assets/imgs/photos/MenuBar9.jpg",
+        "title": "Chef's Specials",
+        "description": "Daily chef recommendations"
+    },
+    {
+        "id": 10,
+        "photo": "/assets/imgs/photos/MenuBar10.jpg",
+        "title": "Norwegian Salmon",
+        "description": "Fresh salmon fillet with herbs and lemon sauce"
+    },
+    {
+        "id": 11,
+        "photo": "/assets/imgs/photos/MenuBar11.jpg",
+        "title": "Viking Feast",
+        "description": "Traditional Norse-style roasted meats and vegetables"
+    },
+    {
+        "id": 12,
+        "photo": "/assets/imgs/photos/MenuBar12.jpg",
+        "title": "Scandinavian Meatballs",
+        "description": "Classic meatballs with lingonberry jam and mashed potatoes"
+    },
+    {
+        "id": 13,
+        "photo": "/assets/imgs/photos/MenuBar13.jpg",
+        "title": "Nordic Fish Soup",
+        "description": "Creamy seafood soup with fresh cod and shellfish"
+    },
+    {
+        "id": 14,
+        "photo": "/assets/imgs/photos/MenuBar14.jpg",
+        "title": "Smørrebrød",
+        "description": "Open-faced sandwiches with various toppings"
+    },
+    {
+        "id": 15,
+        "photo": "/assets/imgs/photos/MenuBar15.jpg",
+        "title": "Arctic Char",
+        "description": "Pan-seared arctic char with dill sauce"
+    },
+    {
+        "id": 16,
+        "photo": "/assets/imgs/photos/MenuBar16.jpg",
+        "title": "Norwegian Dessert Platter",
+        "description": "Selection of traditional Norwegian sweets and pastries"
+    }
+]

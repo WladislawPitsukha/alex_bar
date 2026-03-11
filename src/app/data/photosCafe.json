@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "photo": "/assets/imgs/photos/photo_norway_1.jpg",
+        "title": "Cafe Interior",
+        "description": "Modern Norwegian-style interior design"
+    },
+    {
+        "id": 2,
+        "photo": "/assets/imgs/photos/photo_norway_2.jpg",
+        "title": "Seating Area",
+        "description": "Comfortable seating with Nordic aesthetics"
+    },
+    {
+        "id": 3,
+        "photo": "/assets/imgs/photos/photo_norway_3.jpg",
+        "title": "Bar Counter",
+        "description": "Traditional Norwegian bar setup"
+    },
+    {
+        "id": 4,
+        "photo": "/assets/imgs/photos/photo_norway_4.jpg",
+        "title": "Dining Space",
+        "description": "Elegant dining area with Nordic touches"
+    },
+    {
+        "id": 5,
+        "photo": "/assets/imgs/photos/photo_norway_5.jpg",
+        "title": "Outdoor Terrace",
+        "description": "Scenic outdoor seating area"
+    },
+    {
+        "id": 6,
+        "photo": "/assets/imgs/photos/photo_norway_6.jpg",
+        "title": "Private Room",
+        "description": "Exclusive dining space with Norwegian decor"
+    },
+    {
+        "id": 7,
+        "photo": "/assets/imgs/photos/photo_norway_7.jpg",
+        "title": "Lounge Area",
+        "description": "Relaxing lounge with Nordic design elements"
+    },
+    {
+        "id": 8,
+        "photo": "/assets/imgs/photos/photo_norway_8.jpg",
+        "title": "Bar Display",
+        "description": "Showcase of Norwegian spirits and beverages"
+    },
+    {
+        "id": 9,
+        "photo": "/assets/imgs/photos/photo_norway_9.jpg",
+        "title": "Cafe Entrance",
+        "description": "Welcoming entrance with Nordic charm"
+    }
+]
