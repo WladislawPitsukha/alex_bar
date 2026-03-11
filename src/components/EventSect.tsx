@@ -1,99 +1,56 @@
 "use client";
 
 import { events } from "@/constants/events";
-import { EventProps } from "@/types/eventProps";
-import Image from "next/image";
 import React, { useState } from "react";
+import SectionHeader from "./SectionHeader";
+import { EventBlock } from "./EventBlock";
 
-export function EventBlock({
-    id, title, date, description, images
-}: EventProps): React.JSX.Element {
-    const formattedDate = new Date(date).toLocaleDateString('en-US', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    })
-
-    return(
-        <article 
-            aria-labelledby={`event-${id}-title`}
-            className="flex flex-col border-b-4 border-white py-8 items-center justify-start w-full md:w-[45%] rounded-3xl p-6 bg-black/30"
-            style={{
-                animation: 'colorChange 3s infinite alternate'
-            }}
-        >
-            <h2
-                id={`event-${id}-title`} 
-                className="text-2xl font-bold text-white mb-4"
-            >
-                {title}
-            </h2>
-            <div className="flex flex-col items-center gap-4 w-full">
-                <h4 className="text-lg italic text-white">
-                    {formattedDate}
-                </h4>
-                <div className="grid grid-cols-3 gap-4 w-full">
-                    {images.map((image, index) => (
-                        <Image 
-                            key={index}
-                            src={image.src}
-                            alt={`Event image ${index + 1}`}
-                            width={100}
-                            height={100}
-                            className="rounded-lg w-full h-full"
-                        />
-                    ))}
-                </div>
-                <p className="text-white text-center max-w-[600px] p-5 border rounded-lg border-white/20 mt-4">
-                    {description}
-                </p>
-            </div>
-        </article>
-    )
-}
 
 export default function EventSect(): React.JSX.Element {
     const [page, setPage] = useState<number>(1);
     const pageSize = 2;
     const total = events.length;
-    const totalPages = Math.max(1, Math.ceil(total / pageSize))
+    const totalPages = Math.max(1, Math.ceil(total / pageSize));
 
-    const start  = (page - 1) * pageSize
+    const start = (page - 1) * pageSize;
     const current = events.slice(start, start + pageSize);
 
-    const go = (p:number) => setPage(Math.min(Math.max(1, p), totalPages));
+    const go = (p: number) => setPage(Math.min(Math.max(1, p), totalPages));
     const prev = () => go(page - 1);
-    const next = () => go(page + 1)
+    const next = () => go(page + 1);
 
-    return(
-        <section className="bg-black text-white py-12 min-h-[60vh]">
-            <h1 className="text-4xl font-bold tracking-wide mb-8 text-white uppercase text-center">
-                Interactions & Events
-            </h1>
-            <div className="flex flex-row flex-wrap items-start justify-center gap-8">
+    return (
+        <section className="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white py-12 min-h-[60vh] w-full">
+            <SectionHeader title={`Interactions & Events`} />
+            <div className="flex flex-row flex-wrap items-start justify-center gap-10">
                 {current.map((event, index) => (
-                    <EventBlock 
-                        key={index}
+                    <EventBlock
+                        key={event.id}
                         {...event}
+                        gradientIndex={index}
                     />
                 ))}
             </div>
-            <div className="mt-8 flex items-center justify-center gap-3">
+            <div className="mt-10 flex items-center justify-center gap-3">
                 <button
                     onClick={prev}
                     disabled={page === 1}
-                    className="px-3 py-1 rounded-md bg-white/10 hover:bg-white/20 disabled:opacity-40 cursor-pointer"
+                    className="px-4 py-2 rounded-full bg-gradient-to-r from-pink-400 to-yellow-400 text-black font-bold shadow-lg hover:from-yellow-400 hover:to-pink-400 transition-all disabled:opacity-40 cursor-pointer"
                     aria-label="Previous page"
                 >
                     Prev
                 </button>
                 <div className="flex items-center gap-2">
-                    {Array.from({length: totalPages}, (_, i) => i  + 1).map((p) => (
+                    {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
                         <button
                             key={p}
                             onClick={() => go(p)}
                             aria-current={p === page}
-                            className={`px-3 py-1 rounded-md ${p === page ? "bg-white/30" : "bg-white/10 hover:bg-white/20 cursor-pointer"}`}
+                            className={`px-4 py-2 rounded-full font-bold shadow-md transition-all ${
+                                p === page
+                                    ? "bg-gradient-to-r from-blue-400 to-green-400 text-black scale-110"
+                                    : "bg-white/20 text-white hover:bg-white/40"
+                            }`}
                         >
                             {p}
                         </button>
@@ -102,15 +59,25 @@ export default function EventSect(): React.JSX.Element {
                 <button
                     onClick={next}
                     disabled={page === totalPages}
-                    className="px-3 py-1 rounded-md bg-white/10 hover:bg-white/20 disabled:opacity-40 cursor-pointer"
+                    className="px-4 py-2 rounded-full bg-gradient-to-r from-pink-400 to-yellow-400 text-black font-bold shadow-lg hover:from-yellow-400 hover:to-pink-400 transition-all disabled:opacity-40 cursor-pointer"
                     aria-label="Next page"
                 >
                     Next
                 </button>
             </div>
-            <div className="mt-4 text-center text-sm text-white/60">
-                Showing {Math.min(total, start + 1)} - {Math.min(total, start + pageSize)} of last {total} events
+            <div className="mt-6 text-center text-base text-white/70 font-semibold">
+                Showing {Math.min(total, start + 1)} - {Math.min(total, start + pageSize)} of {total} events
             </div>
+            <style jsx global>{`
+                @keyframes gradient-move {
+                    0% { background-position: 0% 50%; }
+                    100% { background-position: 100% 50%; }
+                }
+                .animate-gradient-move {
+                    background-size: 200% 200%;
+                    animation: gradient-move 6s ease-in-out infinite alternate;
+                }
+            `}</style>
         </section>
-    )
+    );
 }
