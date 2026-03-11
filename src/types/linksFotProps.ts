@@ -3,6 +3,6 @@ import { IconType } from "react-icons";
 export type LinksFotProps = {
     id: number,
     labelText: string,
-    icon: IconType,
+    icon: string | IconType,
     href: string,
 }
