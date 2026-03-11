@@ -1,0 +1,428 @@
+[
+    {
+        "id": 1,
+        "section": "Starters",
+        "products": [
+        {
+            "id": 1,
+            "price": 18,
+            "info": {
+            "description": "Classic bruschetta with tomatoes, garlic, and basil.",
+            "components": [
+                { "id": 1, "text": "Baguette", "amount": 2 },
+                { "id": 2, "text": "Tomatoes", "amount": 3 },
+                { "id": 3, "text": "Garlic", "amount": 1 },
+                { "id": 4, "text": "Basil", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/starters/bruschetta.jpg",
+                "/imgs/menu/starters/bruschetta2.jpg",
+                "/imgs/menu/starters/bruschetta3.jpg"
+            ]
+            }
+        },
+        {
+            "id": 2,
+            "price": 22,
+            "info": {
+            "description": "Mini cheese and spinach quiche.",
+            "components": [
+                { "id": 1, "text": "Eggs", "amount": 2 },
+                { "id": 2, "text": "Spinach", "amount": 1 },
+                { "id": 3, "text": "Cheese", "amount": 1 },
+                { "id": 4, "text": "Pastry", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/starters/quiche.jpg",
+                "/imgs/menu/starters/quiche2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 3,
+            "price": 20,
+            "info": {
+            "description": "Chicken satay skewers with peanut sauce.",
+            "components": [
+                { "id": 1, "text": "Chicken", "amount": 2 },
+                { "id": 2, "text": "Peanut Sauce", "amount": 1 },
+                { "id": 3, "text": "Cucumber", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/starters/satay.jpg",
+                "/imgs/menu/starters/satay2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 4,
+            "price": 16,
+            "info": {
+            "description": "Caprese salad with mozzarella and tomatoes.",
+            "components": [
+                { "id": 1, "text": "Mozzarella", "amount": 1 },
+                { "id": 2, "text": "Tomatoes", "amount": 2 },
+                { "id": 3, "text": "Basil", "amount": 1 },
+                { "id": 4, "text": "Olive Oil", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/starters/caprese.jpg",
+                "/imgs/menu/starters/caprese2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 5,
+            "price": 19,
+            "info": {
+            "description": "Shrimp cocktail with tangy sauce.",
+            "components": [
+                { "id": 1, "text": "Shrimp", "amount": 6 },
+                { "id": 2, "text": "Cocktail Sauce", "amount": 1 },
+                { "id": 3, "text": "Lemon", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/starters/shrimp.jpg",
+                "/imgs/menu/starters/shrimp2.jpg"
+            ]
+            }
+        }
+        ]
+    },
+    {
+        "id": 2,
+        "section": "Main Dishes",
+        "products": [
+        {
+            "id": 1,
+            "price": 38,
+            "info": {
+            "description": "Grilled salmon with lemon butter sauce.",
+            "components": [
+                { "id": 1, "text": "Salmon", "amount": 1 },
+                { "id": 2, "text": "Lemon Butter", "amount": 1 },
+                { "id": 3, "text": "Asparagus", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/main/salmon.jpg",
+                "/imgs/menu/main/salmon2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 2,
+            "price": 34,
+            "info": {
+            "description": "Beef steak with peppercorn sauce.",
+            "components": [
+                { "id": 1, "text": "Beef Steak", "amount": 1 },
+                { "id": 2, "text": "Peppercorn Sauce", "amount": 1 },
+                { "id": 3, "text": "Potatoes", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/main/steak.jpg",
+                "/imgs/menu/main/steak2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 3,
+            "price": 29,
+            "info": {
+            "description": "Vegetarian lasagna with ricotta and spinach.",
+            "components": [
+                { "id": 1, "text": "Lasagna Sheets", "amount": 3 },
+                { "id": 2, "text": "Ricotta", "amount": 1 },
+                { "id": 3, "text": "Spinach", "amount": 1 },
+                { "id": 4, "text": "Tomato Sauce", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/main/lasagna.jpg",
+                "/imgs/menu/main/lasagna2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 4,
+            "price": 32,
+            "info": {
+            "description": "Chicken curry with jasmine rice.",
+            "components": [
+                { "id": 1, "text": "Chicken", "amount": 1 },
+                { "id": 2, "text": "Curry Sauce", "amount": 1 },
+                { "id": 3, "text": "Jasmine Rice", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/main/curry.jpg",
+                "/imgs/menu/main/curry2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 5,
+            "price": 36,
+            "info": {
+            "description": "Pork schnitzel with potato salad.",
+            "components": [
+                { "id": 1, "text": "Pork", "amount": 1 },
+                { "id": 2, "text": "Breadcrumbs", "amount": 1 },
+                { "id": 3, "text": "Potato Salad", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/main/schnitzel.jpg",
+                "/imgs/menu/main/schnitzel2.jpg"
+            ]
+            }
+        }
+        ]
+    },
+    {
+        "id": 3,
+        "section": "Sides",
+        "products": [
+        {
+            "id": 1,
+            "price": 12,
+            "info": {
+            "description": "French fries with sea salt.",
+            "components": [
+                { "id": 1, "text": "Potatoes", "amount": 2 },
+                { "id": 2, "text": "Sea Salt", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/sides/fries.jpg",
+                "/imgs/menu/sides/fries2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 2,
+            "price": 14,
+            "info": {
+            "description": "Steamed vegetables.",
+            "components": [
+                { "id": 1, "text": "Broccoli", "amount": 1 },
+                { "id": 2, "text": "Carrots", "amount": 1 },
+                { "id": 3, "text": "Cauliflower", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/sides/veggies.jpg",
+                "/imgs/menu/sides/veggies2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 3,
+            "price": 13,
+            "info": {
+            "description": "Garlic bread slices.",
+            "components": [
+                { "id": 1, "text": "Bread", "amount": 2 },
+                { "id": 2, "text": "Garlic Butter", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/sides/garlicbread.jpg",
+                "/imgs/menu/sides/garlicbread2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 4,
+            "price": 15,
+            "info": {
+            "description": "Coleslaw salad.",
+            "components": [
+                { "id": 1, "text": "Cabbage", "amount": 1 },
+                { "id": 2, "text": "Carrots", "amount": 1 },
+                { "id": 3, "text": "Mayonnaise", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/sides/coleslaw.jpg",
+                "/imgs/menu/sides/coleslaw2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 5,
+            "price": 13,
+            "info": {
+            "description": "Onion rings with dip.",
+            "components": [
+                { "id": 1, "text": "Onion", "amount": 1 },
+                { "id": 2, "text": "Batter", "amount": 1 },
+                { "id": 3, "text": "Dip", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/sides/onionrings.jpg",
+                "/imgs/menu/sides/onionrings2.jpg"
+            ]
+            }
+        }
+        ]
+    },
+    {
+        "id": 4,
+        "section": "Desserts",
+        "products": [
+        {
+            "id": 1,
+            "price": 16,
+            "info": {
+            "description": "Classic tiramisu with cocoa.",
+            "components": [
+                { "id": 1, "text": "Mascarpone", "amount": 1 },
+                { "id": 2, "text": "Coffee", "amount": 1 },
+                { "id": 3, "text": "Cocoa", "amount": 1 },
+                { "id": 4, "text": "Ladyfingers", "amount": 2 }
+            ],
+            "photos": [
+                "/imgs/menu/desserts/tiramisu.jpg",
+                "/imgs/menu/desserts/tiramisu2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 2,
+            "price": 15,
+            "info": {
+            "description": "Chocolate lava cake with ice cream.",
+            "components": [
+                { "id": 1, "text": "Chocolate Cake", "amount": 1 },
+                { "id": 2, "text": "Ice Cream", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/desserts/lavacake.jpg",
+                "/imgs/menu/desserts/lavacake2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 3,
+            "price": 14,
+            "info": {
+            "description": "Panna cotta with berry sauce.",
+            "components": [
+                { "id": 1, "text": "Panna Cotta", "amount": 1 },
+                { "id": 2, "text": "Berry Sauce", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/desserts/pannacotta.jpg",
+                "/imgs/menu/desserts/pannacotta2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 4,
+            "price": 13,
+            "info": {
+            "description": "Apple pie with cinnamon.",
+            "components": [
+                { "id": 1, "text": "Apple", "amount": 2 },
+                { "id": 2, "text": "Cinnamon", "amount": 1 },
+                { "id": 3, "text": "Pastry", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/desserts/applepie.jpg",
+                "/imgs/menu/desserts/applepie2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 5,
+            "price": 15,
+            "info": {
+            "description": "Cheesecake with strawberry topping.",
+            "components": [
+                { "id": 1, "text": "Cheesecake", "amount": 1 },
+                { "id": 2, "text": "Strawberry Sauce", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/desserts/cheesecake.jpg",
+                "/imgs/menu/desserts/cheesecake2.jpg"
+            ]
+            }
+        }
+        ]
+    },
+    {
+        "id": 5,
+        "section": "Drinks",
+        "products": [
+        {
+            "id": 1,
+            "price": 10,
+            "info": {
+            "description": "Freshly squeezed orange juice.",
+            "components": [
+                { "id": 1, "text": "Orange", "amount": 3 }
+            ],
+            "photos": [
+                "/imgs/menu/drinks/orangejuice.jpg",
+                "/imgs/menu/drinks/orangejuice2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 2,
+            "price": 12,
+            "info": {
+            "description": "Classic mojito cocktail.",
+            "components": [
+                { "id": 1, "text": "Rum", "amount": 1 },
+                { "id": 2, "text": "Mint", "amount": 1 },
+                { "id": 3, "text": "Lime", "amount": 1 },
+                { "id": 4, "text": "Soda", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/drinks/mojito.jpg",
+                "/imgs/menu/drinks/mojito2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 3,
+            "price": 9,
+            "info": {
+            "description": "Espresso coffee.",
+            "components": [
+                { "id": 1, "text": "Espresso", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/drinks/espresso.jpg",
+                "/imgs/menu/drinks/espresso2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 4,
+            "price": 11,
+            "info": {
+            "description": "Homemade lemonade.",
+            "components": [
+                { "id": 1, "text": "Lemon", "amount": 2 },
+                { "id": 2, "text": "Sugar", "amount": 1 },
+                { "id": 3, "text": "Water", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/drinks/lemonade.jpg",
+                "/imgs/menu/drinks/lemonade2.jpg"
+            ]
+            }
+        },
+        {
+            "id": 5,
+            "price": 13,
+            "info": {
+            "description": "Craft beer (0.5L).",
+            "components": [
+                { "id": 1, "text": "Beer", "amount": 1 }
+            ],
+            "photos": [
+                "/imgs/menu/drinks/beer.jpg",
+                "/imgs/menu/drinks/beer2.jpg"
+            ]
+            }
+        }
+        ]
+    }
+]
