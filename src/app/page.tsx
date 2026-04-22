@@ -1,5 +1,3 @@
-//TODO: start to build the page
-
 import EventSect from "@/components/EventSect";
 import Footer from "@/components/footer";
 import GallerySect from "@/components/GallerySect";
@@ -12,10 +10,10 @@ export default function Home() {
       <>
         <NavBar />
         <main className="flex flex-col items-center">
-          <HeroSect />
-          <GallerySect />
-          <EventSect />
-          <MapSect />
+          <div id="home" className="w-full"><HeroSect /></div>
+          <div id="gallery" className="w-full"><GallerySect /></div>
+          <div id="events" className="w-full"><EventSect /></div>
+          <div id="location" className="w-full"><MapSect /></div>
         </main>
         <Footer />
       </>

@@ -20,7 +20,10 @@ export default function EventSect(): React.JSX.Element {
     const next = () => go(page + 1);
 
     return (
-        <section className="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white py-12 min-h-[60vh] w-full">
+        <section 
+            className="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white py-12 min-h-[60vh] w-full"
+            id="events"
+        >
             <SectionHeader title={`Interactions & Events`} />
             <div className="flex flex-row flex-wrap items-start justify-center gap-10">
                 {current.map((event, index) => (

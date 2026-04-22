@@ -33,8 +33,8 @@ export const navigationsParams: AccordionProps[] = [
         select: [
             {
                 id: 1,
-                name: "Main",
-                link: "main",
+                name: "Home",
+                link: "home",
             },
             {
                 id: 2,

@@ -41,7 +41,10 @@ export default function GallerySect(): React.JSX.Element {
     }, [curPhoto]);
 
     return (
-        <section className="flex flex-col items-center justify-start w-full py-12 bg-gradient-to-br from-black via-gray-900 to-gray-800 min-h-[60vh]">
+        <section 
+            className="flex flex-col items-center justify-start w-full py-12 bg-gradient-to-br from-black via-gray-900 to-gray-800 min-h-[60vh]" 
+            id="gallery"
+        >
             <SectionHeader title={`Gallery of Bar's day`} />
             <div className="max-w-6xl w-full px-4 flex flex-col md:flex-row items-start gap-10">
                 <div className="flex-1 flex items-center justify-center">
