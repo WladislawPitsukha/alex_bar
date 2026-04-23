@@ -1,91 +1,198 @@
-import { MenuProps } from "@/types/menuProps";
+import { PropsMenuPage } from "@/types/propsMenu";
+//TODO: fix import images for menu
+import Photo1Component1_1 from "../assets/imgs/menu/starters/bruschetta/bruschetta_1.jpg";
+import Photo1Component1_2 from "../assets/imgs/menu/starters/bruschetta/bruschetta_2.jpg";
+import Photo1Component1_3 from "../assets/imgs/menu/starters/bruschetta/bruschetta_3.jpg";
+import Photo1Component1_4 from "../assets/imgs/menu/starters/bruschetta/bruschetta_4.jpg";
 
-export const menu: MenuProps[] = [
+import Photo1Component2_1 from "../assets/imgs/menu/starters/quiche/quiche_1.jpg";
+import Photo1Component2_2 from "../assets/imgs/menu/starters/quiche/quiche_2.jpg";
+import Photo1Component2_3 from "../assets/imgs/menu/starters/quiche/quiche_3.jpg";
+
+import Photo1Component3_1 from "../assets/imgs/menu/starters/satay/satay_1.jpg";
+import Photo1Component3_2 from "../assets/imgs/menu/starters/satay/satay_2.jpg";
+import Photo1Component3_3 from "../assets/imgs/menu/starters/satay/satay_3.jpg";
+
+import Photo1Component4_1 from "../assets/imgs/menu/starters/caprese/caprese_1.jpg";
+import Photo1Component4_2 from "../assets/imgs/menu/starters/caprese/caprese_2.jpg";
+import Photo1Component4_3 from "../assets/imgs/menu/starters/caprese/caprese_3.jpg";
+
+import Photo1Component5_1 from "../assets/imgs/menu/starters/shrimp/shrimp_1.jpg";
+import Photo1Component5_2 from "../assets/imgs/menu/starters/shrimp/shrimp_2.jpg";
+import Photo1Component5_3 from "../assets/imgs/menu/starters/shrimp/shrimp_3.jpg";
+
+
+
+import Photo2Component1_1 from "../assets/imgs/menu/main_dishes/salmon/salmon_1.jpg";
+import Photo2Component1_2 from "../assets/imgs/menu/main_dishes/salmon/salmon_2.jpg";
+import Photo2Component1_3 from "../assets/imgs/menu/main_dishes/salmon/salmon_3.jpg";
+
+import Photo2Component2_1 from "../assets/imgs/menu/main_dishes/steak/steak_1.jpg";
+import Photo2Component2_2 from "../assets/imgs/menu/main_dishes/steak/steak_2.jpg";
+import Photo2Component2_3 from "../assets/imgs/menu/main_dishes/steak/steak_3.jpg";
+
+import Photo2Component3_1 from "../assets/imgs/menu/main_dishes/lasagna/lasagna_1.jpg";
+import Photo2Component3_2 from "../assets/imgs/menu/main_dishes/lasagna/lasagna_2.jpg";
+import Photo2Component3_3 from "../assets/imgs/menu/main_dishes/lasagna/lasagna_3.jpg";
+
+import Photo2Component4_1 from "../assets/imgs/menu/main_dishes/curry/curry_1.jpg";
+import Photo2Component4_2 from "../assets/imgs/menu/main_dishes/curry/curry_2.jpg";
+import Photo2Component4_3 from "../assets/imgs/menu/main_dishes/curry/curry_3.jpg";
+
+import Photo2Component5_1 from "../assets/imgs/menu/main_dishes/schnitzel/schnitzel_1.jpg";
+import Photo2Component5_2 from "../assets/imgs/menu/main_dishes/schnitzel/schnitzel_2.jpg";
+import Photo2Component5_3 from "../assets/imgs/menu/main_dishes/schnitzel/schnitzel_3.jpg";
+
+
+import Photo3Component1_1 from "../assets/imgs/menu/sides/fries/fries_1.jpg";
+import Photo3Component1_2 from "../assets/imgs/menu/sides/fries/fries_2.jpg";  
+import Photo3Component1_3 from "../assets/imgs/menu/sides/fries/fries_3.jpg";
+
+import Photo3Component2_1 from "../assets/imgs/menu/sides/veggies/veggies_1.jpg";
+import Photo3Component2_2 from "../assets/imgs/menu/sides/veggies/veggies_2.jpg";
+import Photo3Component2_3 from "../assets/imgs/menu/sides/veggies/veggies_3.jpg";
+
+import Photo3Component3_1 from "../assets/imgs/menu/sides/garlicbread/garlicbread_1.jpg";
+import Photo3Component3_2 from "../assets/imgs/menu/sides/garlicbread/garlicbread_2.jpg";
+
+import Photo3Component4_1 from "../assets/imgs/menu/sides/coleslaw/coleslaw_1.jpg";
+import Photo3Component4_2 from "../assets/imgs/menu/sides/coleslaw/coleslaw_2.jpg";
+
+import Photo3Component5_1 from "../assets/imgs/menu/sides/onionrings/onionrings_1.jpg";
+import Photo3Component5_2 from "../assets/imgs/menu/sides/onionrings/onionrings_2.jpg";
+
+
+import Photo4Component1_1 from "../assets/imgs/menu/desserts/tiramisu/tiramisu_1.jpg";
+import Photo4Component1_2 from "../assets/imgs/menu/desserts/tiramisu/tiramisu_2.jpg";
+import Photo4Component1_3 from "../assets/imgs/menu/desserts/tiramisu/tiramisu_3.jpg";
+
+import Photo4Component2_1 from "../assets/imgs/menu/desserts/lavacake/lavacake_1.jpg";
+import Photo4Component2_2 from "../assets/imgs/menu/desserts/lavacake/lavacake_2.jpg";
+import Photo4Component2_3 from "../assets/imgs/menu/desserts/lavacake/lavacake_3.jpg";
+
+import Photo4Component3_1 from "../assets/imgs/menu/desserts/pannacotta/pannacotta_1.jpg";
+import Photo4Component3_2 from "../assets/imgs/menu/desserts/pannacotta/pannacotta_2.jpg";
+import Photo4Component3_3 from "../assets/imgs/menu/desserts/pannacotta/pannacotta_3.jpg";
+
+
+
+import Photo5Component1_1 from "../assets/imgs/menu/drinks/orangejuice/orangejuice_1.jpg";
+import Photo5Component1_2 from "../assets/imgs/menu/drinks/orangejuice/orangejuice_2.jpg";
+import Photo5Component1_3 from "../assets/imgs/menu/drinks/orangejuice/orangejuice_3.jpg";
+
+import Photo5Component2_1 from "../assets/imgs/menu/drinks/mojito/mojito_1.jpg";
+import Photo5Component2_2 from "../assets/imgs/menu/drinks/mojito/mojito_2.jpg";
+import Photo5Component2_3 from "../assets/imgs/menu/drinks/espresso/espresso_1.jpg";
+
+import Photo5Component3_1 from "../assets/imgs/menu/drinks/espresso/espresso_1.jpg";
+import Photo5Component3_2 from "../assets/imgs/menu/drinks/espresso/espresso_2.jpg";
+import Photo5Component3_3 from "../assets/imgs/menu/drinks/espresso/espresso_3.jpg";
+
+import Photo5Component4_1 from "../assets/imgs/menu/drinks/lemonade/lemonade_1.jpg";
+import Photo5Component4_2 from "../assets/imgs/menu/drinks/lemonade/lemonade_2.jpg";
+import Photo5Component4_3 from "../assets/imgs/menu/drinks/lemonade/lemonade_3.jpg";
+
+import Photo5Component5_1 from "../assets/imgs/menu/drinks/beer/beer_1.jpg";
+import Photo5Component5_2 from "../assets/imgs/menu/drinks/beer/beer_2.jpg";
+import Photo5Component5_3 from "../assets/imgs/menu/drinks/beer/beer_3.jpg";
+
+
+export const menu: PropsMenuPage[] = [
     {
         id: 1,
         section: "Starters",
         products: [
             {
                 id: 1,
+                name: "Bruschetta",
                 price: 18,
                 info: {
                     description: "Classic bruschetta with tomatoes, garlic, and basil.",
                     components: [
-                        { id: 1, text: "Baguette", amount: 2 },
-                        { id: 2, text: "Tomatoes", amount: 3 },
-                        { id: 3, text: "Garlic", amount: 1 },
-                        { id: 4, text: "Basil", amount: 1 },
+                        { text: "Baguette", amount: 2 },
+                        { text: "Tomatoes", amount: 3 },
+                        { text: "Garlic", amount: 1 },
+                        { text: "Basil", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/starters/bruschetta.jpg",
-                        "/imgs/menu/starters/bruschetta2.jpg",
-                        "/imgs/menu/starters/bruschetta3.jpg"
+                        Photo1Component1_1,
+                        Photo1Component1_2,
+                        Photo1Component1_3,
+                        Photo1Component1_4
                     ],
                 },
             },
             {
                 id: 2,
+                name: "Quiche",
                 price: 22,
                 info: {
                     description: "Mini cheese and spinach quiche.",
                     components: [
-                        { id: 1, text: "Eggs", amount: 2 },
-                        { id: 2, text: "Spinach", amount: 1 },
-                        { id: 3, text: "Cheese", amount: 1 },
-                        { id: 4, text: "Pastry", amount: 1 },
+                        { text: "Eggs", amount: 2 },
+                        { text: "Spinach", amount: 1 },
+                        { text: "Cheese", amount: 1 },
+                        { text: "Pastry", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/starters/quiche.jpg",
-                        "/imgs/menu/starters/quiche2.jpg"
+                        Photo1Component2_1,
+                        Photo1Component2_2,
+                        Photo1Component2_3
                     ],
                 },
             },
             {
                 id: 3,
+                name: "Satay Skewers",
                 price: 20,
                 info: {
                     description: "Chicken satay skewers with peanut sauce.",
                     components: [
-                        { id: 1, text: "Chicken", amount: 2 },
-                        { id: 2, text: "Peanut Sauce", amount: 1 },
-                        { id: 3, text: "Cucumber", amount: 1 },
+                        { text: "Chicken", amount: 2 },
+                        { text: "Peanut Sauce", amount: 1 },
+                        { text: "Cucumber", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/starters/satay.jpg",
-                        "/imgs/menu/starters/satay2.jpg"
+                        Photo1Component3_1,
+                        Photo1Component3_2,
+                        Photo1Component3_3
                     ],
                 },
             },
             {
                 id: 4,
+                name: "Caprese Salad",
                 price: 16,
                 info: {
                     description: "Caprese salad with mozzarella and tomatoes.",
                     components: [
-                        { id: 1, text: "Mozzarella", amount: 1 },
-                        { id: 2, text: "Tomatoes", amount: 2 },
-                        { id: 3, text: "Basil", amount: 1 },
-                        { id: 4, text: "Olive Oil", amount: 1 },
+                        { text: "Mozzarella", amount: 1 },
+                        { text: "Tomatoes", amount: 2 },
+                        { text: "Basil", amount: 1 },
+                        { text: "Olive Oil", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/starters/caprese.jpg",
-                        "/imgs/menu/starters/caprese2.jpg"
+                        Photo1Component4_1,
+                        Photo1Component4_2,
+                        Photo1Component4_3
                     ],
                 },
             },
             {
                 id: 5,
+                name: "Shrimp Cocktail",
                 price: 19,
                 info: {
                     description: "Shrimp cocktail with tangy sauce.",
                     components: [
-                        { id: 1, text: "Shrimp", amount: 6 },
-                        { id: 2, text: "Cocktail Sauce", amount: 1 },
-                        { id: 3, text: "Lemon", amount: 1 },
+                        { text: "Shrimp", amount: 6 },
+                        { text: "Cocktail Sauce", amount: 1 },
+                        { text: "Lemon", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/starters/shrimp.jpg",
-                        "/imgs/menu/starters/shrimp2.jpg"
+                        Photo1Component5_1,
+                        Photo1Component5_2,
+                        Photo1Component5_3
                     ],
                 },
             },
@@ -97,82 +204,92 @@ export const menu: MenuProps[] = [
         products: [
             {
                 id: 1,
+                name: "Grilled Salmon",
                 price: 38,
                 info: {
                     description: "Grilled salmon with lemon butter sauce.",
                     components: [
-                        { id: 1, text: "Salmon", amount: 1 },
-                        { id: 2, text: "Lemon Butter", amount: 1 },
-                        { id: 3, text: "Asparagus", amount: 1 },
+                        { text: "Salmon", amount: 1 },
+                        { text: "Lemon Butter", amount: 1 },
+                        { text: "Asparagus", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/main/salmon.jpg",
-                        "/imgs/menu/main/salmon2.jpg"
+                        Photo2Component1_1,
+                        Photo2Component1_2,
+                        Photo2Component1_3
                     ],
                 },
             },
             {
                 id: 2,
+                name: "Beef Steak",
                 price: 34,
                 info: {
                     description: "Beef steak with peppercorn sauce.",
                     components: [
-                        { id: 1, text: "Beef Steak", amount: 1 },
-                        { id: 2, text: "Peppercorn Sauce", amount: 1 },
-                        { id: 3, text: "Potatoes", amount: 1 },
+                        { text: "Beef Steak", amount: 1 },
+                        { text: "Peppercorn Sauce", amount: 1 },
+                        { text: "Potatoes", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/main/steak.jpg",
-                        "/imgs/menu/main/steak2.jpg"
+                        Photo2Component2_1,
+                        Photo2Component2_2,
+                        Photo2Component2_3
                     ],
                 },
             },
             {
                 id: 3,
+                name: "Vegetarian Lasagna",
                 price: 29,
                 info: {
                     description: "Vegetarian lasagna with ricotta and spinach.",
                     components: [
-                        { id: 1, text: "Lasagna Sheets", amount: 3 },
-                        { id: 2, text: "Ricotta", amount: 1 },
-                        { id: 3, text: "Spinach", amount: 1 },
-                        { id: 4, text: "Tomato Sauce", amount: 1 },
+                        { text: "Lasagna Sheets", amount: 3 },
+                        { text: "Ricotta", amount: 1 },
+                        { text: "Spinach", amount: 1 },
+                        { text: "Tomato Sauce", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/main/lasagna.jpg",
-                        "/imgs/menu/main/lasagna2.jpg"
+                        Photo2Component3_1,
+                        Photo2Component3_2,
+                        Photo2Component3_3
                     ],
                 },
             },
             {
                 id: 4,
+                name: "Chicken Curry",
                 price: 32,
                 info: {
                     description: "Chicken curry with jasmine rice.",
                     components: [
-                        { id: 1, text: "Chicken", amount: 1 },
-                        { id: 2, text: "Curry Sauce", amount: 1 },
-                        { id: 3, text: "Jasmine Rice", amount: 1 },
+                        { text: "Chicken", amount: 1 },
+                        { text: "Curry Sauce", amount: 1 },
+                        { text: "Jasmine Rice", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/main/curry.jpg",
-                        "/imgs/menu/main/curry2.jpg"
+                        Photo2Component4_1,
+                        Photo2Component4_2,
+                        Photo2Component4_3
                     ],
                 },
             },
             {
                 id: 5,
+                name: "Pork Schnitzel",
                 price: 36,
                 info: {
                     description: "Pork schnitzel with potato salad.",
                     components: [
-                        { id: 1, text: "Pork", amount: 1 },
-                        { id: 2, text: "Breadcrumbs", amount: 1 },
-                        { id: 3, text: "Potato Salad", amount: 1 },
+                        { text: "Pork", amount: 1 },
+                        { text: "Breadcrumbs", amount: 1 },
+                        { text: "Potato Salad", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/main/schnitzel.jpg",
-                        "/imgs/menu/main/schnitzel2.jpg"
+                        Photo2Component5_1,
+                        Photo2Component5_2,
+                        Photo2Component5_3
                     ],
                 },
             },
@@ -184,79 +301,86 @@ export const menu: MenuProps[] = [
         products: [
             {
                 id: 1,
+                name: "French Fries",
                 price: 12,
                 info: {
                     description: "French fries with sea salt.",
                     components: [
-                        { id: 1, text: "Potatoes", amount: 2 },
-                        { id: 2, text: "Sea Salt", amount: 1 },
+                        { text: "Potatoes", amount: 2 },
+                        { text: "Sea Salt", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/sides/fries.jpg",
-                        "/imgs/menu/sides/fries2.jpg"
+                        Photo3Component1_1,
+                        Photo3Component1_2,
+                        Photo3Component1_3
                     ],
                 },
             },
             {
                 id: 2,
+                name: "Steamed Vegetables",
                 price: 14,
                 info: {
                     description: "Steamed vegetables.",
                     components: [
-                        { id: 1, text: "Broccoli", amount: 1 },
-                        { id: 2, text: "Carrots", amount: 1 },
-                        { id: 3, text: "Cauliflower", amount: 1 },
+                        { text: "Broccoli", amount: 1 },
+                        { text: "Carrots", amount: 1 },
+                        { text: "Cauliflower", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/sides/veggies.jpg",
-                        "/imgs/menu/sides/veggies2.jpg"
+                        Photo3Component2_1,
+                        Photo3Component2_2,
+                        Photo3Component2_3
                     ],
                 },
             },
             {
                 id: 3,
+                name: "Garlic Bread",
                 price: 13,
                 info: {
                     description: "Garlic bread slices.",
                     components: [
-                        { id: 1, text: "Bread", amount: 2 },
-                        { id: 2, text: "Garlic Butter", amount: 1 },
+                        { text: "Bread", amount: 2 },
+                        { text: "Garlic Butter", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/sides/garlicbread.jpg",
-                        "/imgs/menu/sides/garlicbread2.jpg"
+                        Photo3Component3_1,
+                        Photo3Component3_2,
                     ],
                 },
             },
             {
                 id: 4,
+                name: "Coleslaw",
                 price: 15,
                 info: {
                     description: "Coleslaw salad.",
                     components: [
-                        { id: 1, text: "Cabbage", amount: 1 },
-                        { id: 2, text: "Carrots", amount: 1 },
-                        { id: 3, text: "Mayonnaise", amount: 1 },
+                        { text: "Cabbage", amount: 1 },
+                        { text: "Carrots", amount: 1 },
+                        { text: "Mayonnaise", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/sides/coleslaw.jpg",
-                        "/imgs/menu/sides/coleslaw2.jpg"
+                        Photo3Component4_1,
+                        Photo3Component4_2,
                     ],
                 },
             },
             {
                 id: 5,
+                name: "Onion Rings",
                 price: 13,
                 info: {
                     description: "Onion rings with dip.",
                     components: [
-                        { id: 1, text: "Onion", amount: 1 },
-                        { id: 2, text: "Batter", amount: 1 },
-                        { id: 3, text: "Dip", amount: 1 },
+                        { text: "Onion", amount: 1 },
+                        { text: "Batter", amount: 1 },
+                        { text: "Dip", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/sides/onionrings.jpg",
-                        "/imgs/menu/sides/onionrings2.jpg"
+                        Photo3Component5_1,
+                        Photo3Component5_2,
                     ],
                 },
             },
@@ -268,79 +392,54 @@ export const menu: MenuProps[] = [
         products: [
             {
                 id: 1,
+                name: "Tiramisu",
                 price: 16,
                 info: {
                     description: "Classic tiramisu with cocoa.",
                     components: [
-                        { id: 1, text: "Mascarpone", amount: 1 },
-                        { id: 2, text: "Coffee", amount: 1 },
-                        { id: 3, text: "Cocoa", amount: 1 },
-                        { id: 4, text: "Ladyfingers", amount: 2 },
+                        { text: "Mascarpone", amount: 1 },
+                        { text: "Coffee", amount: 1 },
+                        { text: "Cocoa", amount: 1 },
+                        { text: "Ladyfingers", amount: 2 },
                     ],
                     photos: [
-                        "/imgs/menu/desserts/tiramisu.jpg",
-                        "/imgs/menu/desserts/tiramisu2.jpg"
+                        Photo4Component1_1,
+                        Photo4Component1_2,
+                        Photo4Component1_3
                     ],
                 },
             },
             {
                 id: 2,
+                name: "Chocolate Lava Cake",
                 price: 15,
                 info: {
                     description: "Chocolate lava cake with ice cream.",
                     components: [
-                        { id: 1, text: "Chocolate Cake", amount: 1 },
-                        { id: 2, text: "Ice Cream", amount: 1 },
+                        { text: "Chocolate Cake", amount: 1 },
+                        { text: "Ice Cream", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/desserts/lavacake.jpg",
-                        "/imgs/menu/desserts/lavacake2.jpg"
+                        Photo4Component2_1,
+                        Photo4Component2_2,
+                        Photo4Component2_3
                     ],
                 },
             },
             {
                 id: 3,
+                name: "Panna Cotta",
                 price: 14,
                 info: {
                     description: "Panna cotta with berry sauce.",
                     components: [
-                        { id: 1, text: "Panna Cotta", amount: 1 },
-                        { id: 2, text: "Berry Sauce", amount: 1 },
+                        { text: "Panna Cotta", amount: 1 },
+                        { text: "Berry Sauce", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/desserts/pannacotta.jpg",
-                        "/imgs/menu/desserts/pannacotta2.jpg"
-                    ],
-                },
-            },
-            {
-                id: 4,
-                price: 13,
-                info: {
-                    description: "Apple pie with cinnamon.",
-                    components: [
-                        { id: 1, text: "Apple", amount: 2 },
-                        { id: 2, text: "Cinnamon", amount: 1 },
-                        { id: 3, text: "Pastry", amount: 1 },
-                    ],
-                    photos: [
-                        "/imgs/menu/desserts/applepie.jpg",
-                        "/imgs/menu/desserts/applepie2.jpg"
-                    ],
-                },
-            },
-            {
-                id: 5,
-                price: 15,
-                info: {
-                    description: "Cheesecake with strawberry topping.",
-                    components: [
-                        { id: 1, text: "Cheesecake", amount: 1 },
-                        { id: 2, text: "Strawberry Sauce", amount: 1 },
-                    ],
-                    photos: [
-                        "/imgs/menu/desserts/cheesecake.jpg",
-                        "/imgs/menu/desserts/cheesecake2.jpg"
+                        Photo4Component3_1,
+                        Photo4Component3_2,
+                        Photo4Component3_3
                     ],
                 },
             },
@@ -352,76 +451,86 @@ export const menu: MenuProps[] = [
         products: [
             {
                 id: 1,
+                name: "Orange Juice",
                 price: 10,
                 info: {
                     description: "Freshly squeezed orange juice.",
                     components: [
-                        { id: 1, text: "Orange", amount: 3 },
+                        { text: "Orange", amount: 3 },
                     ],
                     photos: [
-                        "/imgs/menu/drinks/orangejuice.jpg",
-                        "/imgs/menu/drinks/orangejuice2.jpg"
+                        Photo5Component1_1,
+                        Photo5Component1_2,
+                        Photo5Component1_3
                     ],
                 },
             },
             {
                 id: 2,
+                name: "Mojito",
                 price: 12,
                 info: {
                     description: "Classic mojito cocktail.",
                     components: [
-                        { id: 1, text: "Rum", amount: 1 },
-                        { id: 2, text: "Mint", amount: 1 },
-                        { id: 3, text: "Lime", amount: 1 },
-                        { id: 4, text: "Soda", amount: 1 },
+                        { text: "Rum", amount: 1 },
+                        { text: "Mint", amount: 1 },
+                        { text: "Lime", amount: 1 },
+                        { text: "Soda", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/drinks/mojito.jpg",
-                        "/imgs/menu/drinks/mojito2.jpg"
+                        Photo5Component2_1,
+                        Photo5Component2_2,
+                        Photo5Component2_3
                     ],
                 },
             },
             {
                 id: 3,
+                name: "Espresso",
                 price: 9,
                 info: {
                     description: "Espresso coffee.",
                     components: [
-                        { id: 1, text: "Espresso", amount: 1 },
+                        { text: "Espresso", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/drinks/espresso.jpg",
-                        "/imgs/menu/drinks/espresso2.jpg"
+                        Photo5Component3_1,
+                        Photo5Component3_2,
+                        Photo5Component3_3
                     ],
                 },
             },
             {
+                name: "Lemonade",
                 id: 4,
                 price: 11,
                 info: {
                     description: "Homemade lemonade.",
                     components: [
-                        { id: 1, text: "Lemon", amount: 2 },
-                        { id: 2, text: "Sugar", amount: 1 },
-                        { id: 3, text: "Water", amount: 1 },
+                        { text: "Lemon", amount: 2 },
+                        { text: "Sugar", amount: 1 },
+                        { text: "Water", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/drinks/lemonade.jpg",
-                        "/imgs/menu/drinks/lemonade2.jpg"
+                        Photo5Component4_1,
+                        Photo5Component4_2,
+                        Photo5Component4_3
                     ],
                 },
             },
             {
                 id: 5,
+                name: "Craft Beer",
                 price: 13,
                 info: {
                     description: "Craft beer (0.5L).",
                     components: [
-                        { id: 1, text: "Beer", amount: 1 },
+                        { text: "Beer", amount: 1 },
                     ],
                     photos: [
-                        "/imgs/menu/drinks/beer.jpg",
-                        "/imgs/menu/drinks/beer2.jpg"
+                        Photo5Component5_1,
+                        Photo5Component5_2,
+                        Photo5Component5_3
                     ],
                 },
             },
