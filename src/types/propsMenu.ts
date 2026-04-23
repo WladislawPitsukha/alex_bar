@@ -1,13 +1,13 @@
-export type MenuProps = {
+export type PropsMenuPage = {
     id: number;
     section: string;
     products: {
         id: number;
+        name: string;
         price: number;
         info: {
             description: string;
             components: {
-                id: number;
                 text: string;
                 amount: number;
             }[];
